@@ -10,7 +10,6 @@ function getWordLength(word) {
 
 function multiply(a, b, c) {
   a * b * c;
-  return;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
