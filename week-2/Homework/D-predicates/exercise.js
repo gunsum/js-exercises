@@ -4,15 +4,18 @@
   Write a predicate to predicates
   The variables should have values that match the expected results.
 */
-
+var number = 5;
 // Finish the predicate function to test if the passed number is negative (less than zero)
 function isNegative(number) {
+   if (number < 0);
+   return false;
 
 }
 
 // Finish the predicate function to test if the passed number is between 0 and 10
 function isBetweenZeroAnd10(number) {
-
+  if (0 > number < 10);
+   return true;
 }
 
 /* 
