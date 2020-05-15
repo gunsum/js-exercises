@@ -1,16 +1,28 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getNumber() {
     return Math.random() * 10;
+    /* RETURN A PSEUDO RANDOM NUMBER BETWEEN 0 AND 1. 
+    THIS FUNCTION RETURNS A RANDOM INTEGER FROM 0 TO 9.    */  
 }
+
+
+
+
 
 // Add comments to explain what this function does. You're meant to use Google!
 function s(w1, w2) {
     return w1.concat(w2);
+    /*  THE CONCAT METHOD IS USED TO JOIN TWO OR MORE ARRAYS. THIS METHOD DOESN'T 
+    CHANGE THE EXISTING ARRAYS BUT RETURNS A NEW ARRAY.   */
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
     // Write the body of this function to concatenate three words together
     // Look at the test case below to understand what to expect in return 
+
+    const sum = firstWord + " " + secondWord + " " + thirdWord;
+    console.log(sum);
+    return sum;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
