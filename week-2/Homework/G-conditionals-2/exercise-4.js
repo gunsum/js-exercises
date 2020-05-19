@@ -9,7 +9,9 @@
 */
 
 function containsCode(sentence) {
-
+  var substring = "code";
+  return (sentence.indexOf(substring) !== -1);
+ //return(sentence.includes(substrin));
 }
 
 /* 
