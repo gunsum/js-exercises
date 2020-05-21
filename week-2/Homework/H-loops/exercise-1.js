@@ -46,12 +46,16 @@ while(k < loopLimit) { //don't change this line
 
   */
 
-  let slices = 0;
-  const hungry = 6;
+  
   
   // add your code here, start with: while(...) {...}
 
-
+  let slices = 0;
+  const hungry = 6;
+  while(slices <= 5) {
+    console.log("eating 1 slice of pizza");
+    slices++
+  }
   
      /* 
     EXPECTED RESULT
