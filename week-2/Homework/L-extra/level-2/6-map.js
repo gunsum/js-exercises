@@ -3,10 +3,20 @@
 // 2. Declare a new array, `percentagesFormatted`, containing
 //    - each item in `percentages` formatted by your function
 
+/*
 var percentages = [1, 23, 92, 18];
 
-console.log(percentagesFormatted);
 
+console.log(percentagesFormatted);
+*/
+
+function formattedPercentages(arr) {
+  return arr + "%";
+}
+
+var percentages = [1, 23, 92, 18];
+var percentagesFormatted = percentages.map(formattedPercentages)
+console.log(percentagesFormatted)
 /*
   EXPECTED RESULT
   ---------------
