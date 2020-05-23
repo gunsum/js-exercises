@@ -4,8 +4,27 @@
 // - is less than or equal to 100
 // Tip: write other small functions for each requirement
 
-function validate(num) {}
+function validate1(num) {
+  let numType = typeof num;
+  return numType === "number";
+}
 
+function validate2(num) {
+  return num > 0;
+}
+
+function validate3(num) {
+  return num <= 100;
+}
+
+
+function validate(num) {
+  if (validate1(num) === true && validate2(num) === true && validate3(num) === true) {
+    return true;
+  }else {
+    return false;
+  }
+}
 /*
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
