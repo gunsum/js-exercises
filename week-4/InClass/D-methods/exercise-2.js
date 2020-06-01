@@ -6,8 +6,11 @@ Add a method "sayName" so this person can say their own name.
 let person = {
   name: "Alice",
   age: 25,
+  sayName: function(){
+    return "My name is Alice!"
+  },
 };
-
+person.sayName;
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE
 */
