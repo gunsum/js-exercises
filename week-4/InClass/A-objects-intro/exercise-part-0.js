@@ -5,9 +5,11 @@ Describe your own laptop as a JavaScript object
 Try to think of as many properties as you can!
 
 */
-let MyLaptop = {
+let myLaptop = {
     brand : "MacBook Air",
-    screenSize : 15,
-    memory : "8GB"
+    version : "MacOS Sierra 10.12.6"
+    screenSize : 13.3,
+    memory : "8GB",
+    processor : "1.7 GHz Intel i7"
 
 } 
