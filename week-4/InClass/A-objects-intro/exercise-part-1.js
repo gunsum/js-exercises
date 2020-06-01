@@ -7,3 +7,8 @@ Assign each of them to a separate variable
 
 */
 
+let myCar = {
+   make : "Peugeot",
+   model : "Ion",
+   fuelType : "electric"
+}
