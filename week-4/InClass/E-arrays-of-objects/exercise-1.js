@@ -29,18 +29,26 @@ var persons = [person1, person2, person3]// Complete here
 
 function getPersonNames(person){
     return person.name;
+
 }
 
-var personNames = persons.map(getPersonNames());// Complete here
 
+var personNames = persons.map(getPersonNames);// Complete here
+ 
 
 
 
 function getPerson28Ages(person){
-    return person.age
+    
+ if(person.age < 28){
+     return true;   
+ } else{
+     return false;
+ }
 }
 
-var personsYoungerThan28YearsOld = persons.filter(getPerson28Ages()); // Complete here
+
+var personsYoungerThan28YearsOld = persons.filter(getPerson28Ages); // Complete here
 
 
 /*
