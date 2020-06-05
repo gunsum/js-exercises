@@ -17,35 +17,58 @@ console.log("Favorite food is " + myFavFood.name);
 // and returns the address of where to buy it
 
 function getTakeAwayAddress(food) {
-  // write code here
+  return food.takeAway.address;
 }
 
 console.log("I can buy my favorite food from " + getTakeAwayAddress(myFavFood));
+
 
 // 3. Declare a function "isVeggie" that accepts "food" as a parameter
 // and returns true if it's vegetarian, or false if not
 
 function isVeggie(food) {
-  // write code here
+  if(food.isVeggie == true){
+    return true;
+  }else {
+    false;
+  }
 }
 
-console.log("Is my favorite vegetarian? " + isVeggie(food));
+  
+
+console.log("Is my favorite vegetarian? " + isVeggie(myFavFood));
+
+
+
 
 // 3. Declare a function "isLowCalorie" that accepts "food" as a parameter
 // and returns true if it has less than 600 calories, or false otherwise
 // write your own console.log() that calls the function to test it, as in the examples above!
 // no example code is provided here!
 
+function isLowCalorie(food) {
+  if(food.caloriesPerPortion < 600) {
+  return true;
+}else {
+  false;
+}
+}
+console.log("Is my Low Calorie food " + isLowCalorie(myFavFood));
+
 //---------------------------------------
 
 // 3. Declare a function "isSafeForNutAllergies" that accepts "food" as a parameter
 // and returns false if it found the word "sesame" in the ingredients, or true otherwise
 
-function isSafeForNutAllergies(food) {
-  //write code here
-}
 
-console.log(
-  "Is my favorite food nut allergy safe? ",
-  isSafeForNutAllergies(myFavFood)
-);
+function isSafeForNutAllergies(food) {
+  if (food.ingredients.includes("sesame")){
+    return false;
+  }else{
+    return true;
+  }
+  }
+
+
+console.log("Is my favorite food nut allergy safe? " + isSafeForNutAllergies(myFavFood))
+
