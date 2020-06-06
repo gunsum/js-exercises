@@ -42,3 +42,21 @@ let writers = [
 /*
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */
+function famousWriters(writers) {
+  for(let i=0; i<writers.length; i++)
+console.log(writers.firstName);
+}
+
+famousWriters(writers);
+
+
+
+
+
+
+function aliveWriters(writers){
+
+  if(writers.alive) {
+    console.log(writers.firstName);
+  }
+}
