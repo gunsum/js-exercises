@@ -15,7 +15,10 @@ Write JavaScript below that logs:
     --> should log a list of nodes with a length of 3
 
 */
-
+   console.log(document.querySelectorAll("p"));
+   console.log(document.querySelector(".site-header"));
+   console.log(document.querySelector("#jumbotron-text"));
+   console.log(document.querySelectorAll)
 /*
 Task 2
 ======
