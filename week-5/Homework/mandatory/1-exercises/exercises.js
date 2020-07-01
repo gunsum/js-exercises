@@ -13,8 +13,26 @@
  *      .....
  * </div>
  */
-function exerciseOne(arrayOfPeople) {
-  let content = document.querySelector("#content");
+ 
+ 
+
+
+function exerciseOne(arrayOfPeople) { //arrayi cagiriyorum niye cagiriyorum bir islem yapacam
+
+
+let content = document.querySelector("#content");//domdan bir eleman 
+
+  arrayOfPeople.forEach(person => {
+     console.log(person);
+
+     let nameHeading = document.createElement("h1");
+     nameHeading.innerText = person.name;
+     content.appendChild(nameHeading);
+
+     let jobHeading = document.createElement("h2");
+     jobHeading.innerText = person.job;
+     content.appendChild(jobHeading);
+  } );
 }
 
 /**
@@ -25,6 +43,21 @@ function exerciseOne(arrayOfPeople) {
  *
  */
 function exerciseTwo(shoppingItems) {
+
+  let content = document.querySelector("#content");
+
+  let newUl =document.createElement("ul");
+  content.appendChild(newUl);
+
+  shoppingItems.forEach(item =>{
+    console.log(item);
+
+  let newLi = document.createElement("li");
+  newLi.innerText= item;
+  newUl.appendChild(newLi);
+  
+  })
+
   //Write your code in here
 }
 
@@ -58,11 +91,40 @@ function exerciseTwo(shoppingItems) {
     - Add an <img> to each book that links to a URL of the book cover.
     - Change the style of the book depending on whether you have read it (green) or not (red).
 
-    The end result should look something like this: https://hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
+    
+    
 **/
 function exerciseThree(books) {
-  //Write your code in here
+
+  let content = document.querySelector("#content");
+
+  let ulElement = document.createElement("ul");
+  content.appendChild(ulElement);
+  
+
+  books.forEach(book => {
+    let liElement = document.createElement("li");
+    ulElement.appendChild(liElement);
+    let bookParagraphTitleAuthor = document.createElement("p");
+    let bookStyle;
+    if(book.alreadyRead){
+       bookStyle = "readBook";
+    }else{
+       bookStyle = "unReadBook";
+    }
+
+    bookParagraphTitleAuthor.className = bookStyle;//setting class attribute so we say "className"
+     
+    bookParagraphTitleAuthor.innerText = `${book.title} - ${book.author}`;
+    liElement.appendChild(bookParagraphTitleAuthor); 
+
+    let bookImg = document.createElement("img");
+    bookImg.src = book.coverImageUrl;
+    liElement.appendChild(bookImg);
+  });
 }
+  //Write your code in here
+
 
 //
 //
@@ -79,6 +141,7 @@ let people = [
   { name: "Joanna", job: "Student" },
   { name: "Boris", job: "Prime Minister" },
 ];
+
 
 exerciseOne(people);
 
