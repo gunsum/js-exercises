@@ -94,7 +94,7 @@ function exerciseTwo(shoppingItems) {
     
     
 **/
-function exerciseThree(books) {
+function exerciseThree(booksArray) {
 
   let content = document.querySelector("#content");
 
@@ -102,30 +102,30 @@ function exerciseThree(books) {
   content.appendChild(ulElement);
   
 
-  books.forEach(book => {
+  booksArray.forEach(book => {
     let liElement = document.createElement("li");
     ulElement.appendChild(liElement);
     let bookParagraphTitleAuthor = document.createElement("p");
     let bookStyle;
     if(book.alreadyRead){
-       bookStyle = "readBook";
-    }else{
+      bookStyle = "readBook";
+    }else {
        bookStyle = "unReadBook";
+    }  
     }
-
-    bookParagraphTitleAuthor.className = bookStyle;//setting class attribute so we say "className"
+       
+    bookParagraphTitleAuthor.className = bookStyle,//setting class attribute so we say "className"
      
-    bookParagraphTitleAuthor.innerText = `${book.title} - ${book.author}`;
+    bookParagraphTitleAuthor.innerText = `${book.title} - ${book.author}`);
     liElement.appendChild(bookParagraphTitleAuthor); 
 
     let bookImg = document.createElement("img");
     bookImg.src = book.coverImageUrl;
     liElement.appendChild(bookImg);
-  });
-}
+  }  
   //Write your code in here
 
-
+}
 //
 //
 //
@@ -171,3 +171,4 @@ const books = [
 ];
 
 exerciseThree(books);
+
